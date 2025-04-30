@@ -16,10 +16,16 @@ class _ForgotPasswordState extends State<ForgotPassword> {
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Column(
           children: [
+            SizedBox(height: 60),
             Row(
               children: [
                 IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
-                Text("Forgot Password"),
+                Text("Forgot Password",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold
+                  ),
+                ),
               ],
             ),
             Text("Please enter your email address to receive a verification code"),

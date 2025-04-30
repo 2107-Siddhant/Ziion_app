@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ziion_app/forgot_password.dart';
+import 'package:ziion_app/initial.dart';
 import 'package:ziion_app/signup.dart';
 import 'package:ziion_app/verify_password.dart';
 
@@ -42,7 +43,8 @@ class MyApp extends StatelessWidget {
         // 'login': (context) => const Login(),
         'signup' : (context) => const Signup(),
         'forgot_password': (context) => ForgotPassword(),
-        'verify_password': (context) => VerifyPassword()
+        'verify_password': (context) => VerifyPassword(),
+        'initial': (context) => Initial()
       },
     );
   }
