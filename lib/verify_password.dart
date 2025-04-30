@@ -11,7 +11,11 @@ class _VerifyPasswordState extends State<VerifyPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: Column(
+        children: [
+          Text("data"),
+        ],
+      ),
     );
   }
 }
