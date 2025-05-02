@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ziion_app/new_password.dart';
+import 'package:ziion_app/signup.dart';
+import 'package:ziion_app/splash.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -92,7 +95,9 @@ class _LoginState extends State<Login> {
                           ],
                         ),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => NewPassword()));
+                          },
                           child: const Text(
                             "Forgot password?",
                             style: TextStyle(color: Colors.grey),
@@ -140,10 +145,10 @@ class _LoginState extends State<Login> {
                         GestureDetector(
                           onTap: () {},
                           child: Image.asset(
-                            'assets/images/img.png',
+                             'assets/images/googlbutton.png',
                             fit: BoxFit.cover,
-                            height: 30,
-                            width: 30,
+                            height: 29,
+                            width: 28,
                           ),
                         ),
                         IconButton(
@@ -169,7 +174,12 @@ class _LoginState extends State<Login> {
                       children: [
                         const Text("Don't have an account? "),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Signup()));
+                          },
                           child: const Text(
                             "Sign Up",
                             style: TextStyle(
