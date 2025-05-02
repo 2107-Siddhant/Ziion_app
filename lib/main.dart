@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ziion_app/forgot_password.dart';
+import 'package:ziion_app/initial.dart';
+import 'package:ziion_app/login.dart';
 import 'package:ziion_app/signup.dart';
+import 'package:ziion_app/splash.dart';
 import 'package:ziion_app/verify_password.dart';
 
 void main() {
@@ -36,13 +39,14 @@ class MyApp extends StatelessWidget {
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(26), borderSide: BorderSide.none)
         )
       ),
-      initialRoute: 'forgot_password',
+      initialRoute: 'initial',
       routes: {
-        // 'splashScreen': (context) => const SplashScreen(),
-        // 'login': (context) => const Login(),
+        'splashScreen': (context) => const SplashScreen(),
+        'login': (context) => const Login(),
         'signup' : (context) => const Signup(),
         'forgot_password': (context) => ForgotPassword(),
-        'verify_password': (context) => VerifyPassword()
+        'verify_password': (context) => VerifyPassword(),
+        'initial': (context) => Initial()
       },
     );
   }
